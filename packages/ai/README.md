@@ -1,5 +1,7 @@
 ![hero illustration](./assets/hero.gif)
 
+# 注释版本，不是为了编译的
+
 # AI SDK
 
 The [AI SDK](https://ai-sdk.dev/docs) is a TypeScript toolkit designed to help you build AI-powered applications and agents using popular frameworks like Next.js, React, Svelte, Vue and runtimes like Node.js.

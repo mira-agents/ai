@@ -6,37 +6,37 @@ import {
   ProviderOptions,
   withUserAgentSuffix,
 } from '@ai-sdk/provider-utils';
-import { NoObjectGeneratedError } from '../error/no-object-generated-error';
-import { extractReasoningContent } from '../generate-text/extract-reasoning-content';
-import { extractTextContent } from '../generate-text/extract-text-content';
-import { logWarnings } from '../logger/log-warnings';
-import { resolveLanguageModel } from '../model/resolve-model';
-import { CallSettings } from '../prompt/call-settings';
-import { convertToLanguageModelPrompt } from '../prompt/convert-to-language-model-prompt';
-import { prepareCallSettings } from '../prompt/prepare-call-settings';
-import { Prompt } from '../prompt/prompt';
-import { standardizePrompt } from '../prompt/standardize-prompt';
-import { wrapGatewayError } from '../prompt/wrap-gateway-error';
-import { assembleOperationName } from '../telemetry/assemble-operation-name';
-import { getBaseTelemetryAttributes } from '../telemetry/get-base-telemetry-attributes';
-import { getTracer } from '../telemetry/get-tracer';
-import { recordSpan } from '../telemetry/record-span';
-import { selectTelemetryAttributes } from '../telemetry/select-telemetry-attributes';
-import { stringifyForTelemetry } from '../telemetry/stringify-for-telemetry';
-import { TelemetrySettings } from '../telemetry/telemetry-settings';
+import { NoObjectGeneratedError } from '../../../ai/src/error/no-object-generated-error';
+import { extractReasoningContent } from '../../../ai/src/generate-text/extract-reasoning-content';
+import { extractTextContent } from '../../../ai/src/generate-text/extract-text-content';
+import { logWarnings } from '../../../ai/src/logger/log-warnings';
+import { resolveLanguageModel } from '../../../ai/src/model/resolve-model';
+import { CallSettings } from '../../../ai/src/prompt/call-settings';
+import { convertToLanguageModelPrompt } from '../../../ai/src/prompt/convert-to-language-model-prompt';
+import { prepareCallSettings } from '../../../ai/src/prompt/prepare-call-settings';
+import { Prompt } from '../../../ai/src/prompt/prompt';
+import { standardizePrompt } from '../../../ai/src/prompt/standardize-prompt';
+import { wrapGatewayError } from '../../../ai/src/prompt/wrap-gateway-error';
+import { assembleOperationName } from '../../../ai/src/telemetry/assemble-operation-name';
+import { getBaseTelemetryAttributes } from '../../../ai/src/telemetry/get-base-telemetry-attributes';
+import { getTracer } from '../../../ai/src/telemetry/get-tracer';
+import { recordSpan } from '../../../ai/src/telemetry/record-span';
+import { selectTelemetryAttributes } from '../../../ai/src/telemetry/select-telemetry-attributes';
+import { stringifyForTelemetry } from '../../../ai/src/telemetry/stringify-for-telemetry';
+import { TelemetrySettings } from '../../../ai/src/telemetry/telemetry-settings';
 import {
   CallWarning,
   FinishReason,
   LanguageModel,
-} from '../types/language-model';
-import { LanguageModelRequestMetadata } from '../types/language-model-request-metadata';
-import { LanguageModelResponseMetadata } from '../types/language-model-response-metadata';
-import { ProviderMetadata } from '../types/provider-metadata';
-import { LanguageModelUsage } from '../types/usage';
-import { DownloadFunction } from '../util/download/download-function';
-import { prepareHeaders } from '../util/prepare-headers';
-import { prepareRetries } from '../util/prepare-retries';
-import { VERSION } from '../version';
+} from '../../../ai/src/types/language-model';
+import { LanguageModelRequestMetadata } from '../../../ai/src/types/language-model-request-metadata';
+import { LanguageModelResponseMetadata } from '../../../ai/src/types/language-model-response-metadata';
+import { ProviderMetadata } from '../../../ai/src/types/provider-metadata';
+import { LanguageModelUsage } from '../../../ai/src/types/usage';
+import { DownloadFunction } from '../../../ai/src/util/download/download-function';
+import { prepareHeaders } from '../../../ai/src/util/prepare-headers';
+import { prepareRetries } from '../../../ai/src/util/prepare-retries';
+import { VERSION } from '../../../ai/src/version';
 import { GenerateObjectResult } from './generate-object-result';
 import { getOutputStrategy } from './output-strategy';
 import { parseAndValidateObjectResultWithRepair } from './parse-and-validate-object-result';

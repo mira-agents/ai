@@ -4,8 +4,8 @@ import {
   LanguageModelRequestMetadata,
   LanguageModelResponseMetadata,
   ProviderMetadata,
-} from '../types';
-import { LanguageModelUsage } from '../types/usage';
+} from '../../../ai/src/types';
+import { LanguageModelUsage } from '../../../ai/src/types/usage';
 
 /**
 The result of a `generateObject` call.

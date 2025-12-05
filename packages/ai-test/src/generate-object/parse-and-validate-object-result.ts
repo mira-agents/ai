@@ -1,11 +1,11 @@
 import { JSONParseError, TypeValidationError } from '@ai-sdk/provider';
 import { safeParseJSON } from '@ai-sdk/provider-utils';
-import { NoObjectGeneratedError } from '../error/no-object-generated-error';
+import { NoObjectGeneratedError } from '../../../ai/src/error/no-object-generated-error';
 import type {
   FinishReason,
   LanguageModelResponseMetadata,
   LanguageModelUsage,
-} from '../types';
+} from '../../../ai/src/types';
 import type { OutputStrategy } from './output-strategy';
 import { RepairTextFunction } from './repair-text';
 

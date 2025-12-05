@@ -14,17 +14,17 @@ import {
   Schema,
   ValidationResult,
 } from '@ai-sdk/provider-utils';
-import { NoObjectGeneratedError } from '../error/no-object-generated-error';
+import { NoObjectGeneratedError } from '../../../ai/src/error/no-object-generated-error';
 import {
   FinishReason,
   LanguageModelResponseMetadata,
   LanguageModelUsage,
-} from '../types';
+} from '../../../ai/src/types';
 import {
   AsyncIterableStream,
   createAsyncIterableStream,
-} from '../util/async-iterable-stream';
-import { DeepPartial } from '../util/deep-partial';
+} from '../../../ai/src/util/async-iterable-stream';
+import { DeepPartial } from '../../../ai/src/util/deep-partial';
 import { ObjectStreamPart } from './stream-object-result';
 
 export interface OutputStrategy<PARTIAL, RESULT, ELEMENT_STREAM> {

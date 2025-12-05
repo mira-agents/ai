@@ -1,5 +1,5 @@
 import { FlexibleSchema } from '@ai-sdk/provider-utils';
-import { InvalidArgumentError } from '../error/invalid-argument-error';
+import { InvalidArgumentError } from '../../../ai/src/error/invalid-argument-error';
 
 export function validateObjectGenerationInput({
   output,

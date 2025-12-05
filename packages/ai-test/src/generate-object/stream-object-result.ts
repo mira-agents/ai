@@ -1,13 +1,13 @@
 import { ServerResponse } from 'http';
-import { AsyncIterableStream } from '../util/async-iterable-stream';
+import { AsyncIterableStream } from '../../../ai/src/util/async-iterable-stream';
 import {
   CallWarning,
   FinishReason,
   LanguageModelRequestMetadata,
   LanguageModelResponseMetadata,
   ProviderMetadata,
-} from '../types';
-import { LanguageModelUsage } from '../types/usage';
+} from '../../../ai/src/types';
+import { LanguageModelUsage } from '../../../ai/src/types/usage';
 
 /**
 The result of a `streamObject` call that contains the partial object stream and additional information.
